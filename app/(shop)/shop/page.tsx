@@ -1,18 +1,17 @@
-
 import ShopMain from "@/components/layout/shop/main";
 import ShopAside from "@/components/layout/shop/aside";
 import Breadcrumbs from "@/components/layout/breadcrumbs";
 
-export default function Home() {
+export default function Store() {
   return (
     <>
-      <div className="bg-gray-100 p- mb-4">
-        <div className="container mx-auto h-[140px] flex items-center justify-start">
+      <div className="bg-gray-100 mb-6">
+        <div className="container mx-auto h-[180px] flex flex-col items-start justify-center p-4">
           <h1 className="!text-5xl !font-black">Shop</h1>
           <Breadcrumbs />
         </div>
       </div>
-      <div className="grid md:grid-cols-[200px_1fr] lg:grid-cols-[380px_1fr] min-h-screen gap-4 px-8 font-[family-name:var(--font-geist-sans)]">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[320px_1fr] min-h-screen gap-4 font-[family-name:var(--font-geist-sans)]">
         <ShopAside />
         <ShopMain />
       </div>
